@@ -13,4 +13,6 @@ body{
     background-color: slateblue;
     width: 50vw; /*width baseado em Viewport width */
     height: 50vh; /*height baseado em Viewport height */
+    background-image: url('./Ceramica.jpg');
+    background-attachment: fixed;
 }
