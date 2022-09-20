@@ -1,5 +1,5 @@
 body{
-    height: 100vh;
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(to bottom, snow, 450px,  thistle);
 }
@@ -21,11 +21,18 @@ body{
 
 .segunda{
     background-color: aqua ;
-    height: 100px; 
-
     /* Border também possui uma shorthand que ajuda na organização do código */
     border: 3px solid slateblue ;
     border-radius: 0px 15px;
+
+
+    /* Sobre a aula de Margin e Padding */ 
+
+    /* O parágrafo por si só já possui margin, que seria equivalente a 1em.*/
+
+    padding: 100px; /* O padding funciona como uma margem, porém que se expande dentro do elemento, não por fora. */
+
+    margin: 100px;
 }
 
 .terceira{
@@ -33,17 +40,24 @@ body{
     height: 100px;
     width: 100px;
     margin: auto;
+    margin-bottom: 20px;
     /*Se estivermos querendo criar um círculo, basta utilizar border-radius: 50% em uma div quadrada. Já que essa div é retangular, o efeito seria bem esquisito e não usual */
     border-radius: 50%;
 
     border: 3px solid green;
 }
 
-p{
+.p1{
     text-align: center;
 
     border: 1px solid black;
     padding: 5px;
 
     box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.196);
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
 }
