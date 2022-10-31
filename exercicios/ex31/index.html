@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <!-- Na criação de um formulário, precisamos definir: o método de envio com METHOD (GET ou POST); e Qual a ACTION.-->
+
+    <!--Sobre ACTION: quando criamos um WebService ou um API (algo que está esperando esses dados), teremos o end-point (que seria o endereço que usamos para criar uma requisição)-->
+    
+
+    <!--
+        <form method="GET" action="/cadastro"
+    ------------------------------------------------------------------------
+     Se o FrontEnd não estiver rodando no mesmo enredeço que o webservice, precismos usar http:// 
+    ------------------------------------------------------------------------
+
+    Input text é um campo de texto
+    ------------------------------------------------------------------------
+    <input type="text" name="nome">
+    <input type="text" name="email">
+    ------------------------------------------------------------------------
+
+    Input submit é um campo de envio
+    ------------------------------------------------------------------------
+    <input type="submit" >
+
+        </form>
+    -->
+
+
+    <!--Quando usamos o método GET no formulário, os dados enviados serão exibidos no endereço (nesse caso, url). Para evitar isso, o correto é o método POST-->
+
+    <form method="POST" action="/cadastro">
+        <input type="text" name="nome">
+        <input type="text" name="email">
+
+        <input type="submit">
+    </form>
+
+    <!--Com GET é possível pegar a action e input de outros sites-->
+
+    <form method="GET" action="https://www.youtube.com/watch?">
+        <input type="text" name="v">
+        <input type="submit">
+
+    </form>
+
+    <form method="GET" action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <input type="submit">
+    </form>
+</body>
+</html>
