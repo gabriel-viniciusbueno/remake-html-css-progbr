@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Input</title>
+</head>
+<body>
+
+    <form method="GET" action="/">
+
+        <input type="text" name="search_query">
+
+<!-- Além de Inputs como text e submit, existem outros tipos para ocasiões diferentes.-->
+
+        <input type="password" name="senha"> <!--Password esconde a informação colocada no campo, essencial para senhas. Porém é importante relembrar: com o Method GET a senha ficará visível na URL. -->
+
+
+        <!--Outro tipo de Input é o Checkbox, que serve para criar caixas de opção. Quando vamos fazer algo assim com checkbox, é necessário o atributo VALUE="opção" para podermos identificar as opções marcadas e desmarcadas -->
+        <br>
+        <input type="checkbox" name="curso" value="op1"> React Native
+        <br>
+        <input type="checkbox" name="curso" value="op2"> React Js
+        <br>
+        <input type="checkbox" name="curso" value="op3"> Node Js
+        <br>
+
+
+        <!--No caso de RADIO, apenas uma opção pode estar selecionada. É importante que todas as opções tenham o mesmo nome.-->
+        <input type="radio" name="genero" value="m"> Masculino
+        <br>
+        <input type="radio" name="genero" value="f"> Feminino
+        <br>
+        <!--Caso seja interessante abrir a página com alguma opção já marcada, basta colocar o atributo CHECKED-->
+
+
+        <!--O Input RESET serve para resetar os campos de volta ao padrão. Para mudar o nome basta adicionar um valor a ele.-->
+        <input type="reset" value="Resetar">
+
+        <input type="submit" value="Concluir">
+    </form>
+    
+</body>
+</html>
