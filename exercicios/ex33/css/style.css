@@ -4,7 +4,7 @@ body{
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
 
-    background: linear-gradient(to bottom, white, rgb(155, 133, 255) )
+    background: linear-gradient(to bottom, white, rgb(155, 133, 255) );
 }
 
 select{
